@@ -54,10 +54,12 @@
       apt_key:
         url: https://pkg.jenkins.io/debian/jenkins.io.key
         state: present
+        validate_certs: yes
+        keyring: /usr/share/keyrings/jenkins.gpg
 
     - name: Add Jenkins APT repository
       apt_repository:
-        repo: deb http://pkg.jenkins.io/debian-stable binary/
+        repo: deb [signed-by=/usr/share/keyrings/jenkins.gpg] http://pkg.jenkins.io/debian-stable binary/
         state: present
         update_cache: yes
 
