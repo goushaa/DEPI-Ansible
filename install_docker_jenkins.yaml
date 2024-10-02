@@ -50,12 +50,10 @@
         name: openjdk-11-jdk
         state: present
 
-    - name: Add Jenkins repository key
-      apt_key:
+    - name: Download Jenkins GPG key
+      get_url:
         url: https://pkg.jenkins.io/debian/jenkins.io.key
-        state: present
-        validate_certs: yes
-        keyring: /usr/share/keyrings/jenkins.gpg
+        dest: /usr/share/keyrings/jenkins.gpg
 
     - name: Add Jenkins APT repository
       apt_repository:
