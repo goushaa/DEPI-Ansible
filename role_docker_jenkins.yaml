@@ -2,15 +2,5 @@
 - name: Install Docker and Jenkins
   hosts: localhost
   become: true
-
-  vars:
-    jenkins_http_port: 8080                    # HTTP port for Jenkins web interface
-    jenkins_admin_username: admin               # Default admin username
-    jenkins_admin_password: admin               # Default admin password
-    java_packages:                              # Specify the required Java package
-      - openjdk-11-jdk                          # Use openjdk-11 for newer versions
-
   roles:
-    - role: geerlingguy.docker                  # Role to install Docker
-    - role: geerlingguy.java                    # Role to install Java
-    - role: geerlingguy.jenkins                 # Role to install Jenkins
+    - iam-surya369.java-jenkins-docker
