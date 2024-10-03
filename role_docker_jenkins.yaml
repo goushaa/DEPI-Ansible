@@ -3,5 +3,4 @@
   hosts: localhost
   become: true
   roles:
-    - geerlingguy.docker
-    - geerlingguy.jenkins
+    - iam-surya369.java-jenkins-docker
