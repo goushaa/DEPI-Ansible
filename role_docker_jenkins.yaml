@@ -4,7 +4,6 @@
   become: true
 
   vars:
-    jenkins_hostname: jenkins.example.com      # Set your desired hostname for Jenkins
     jenkins_http_port: 8080                    # HTTP port for Jenkins web interface
     jenkins_admin_username: admin               # Default admin username
     jenkins_admin_password: admin               # Default admin password
