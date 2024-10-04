@@ -25,7 +25,7 @@ This Ansible playbook installs Docker and Jenkins on the localhost using the `ia
 3. Run the playbook with the following command:
 
     ```bash
-    ansible-playbook playbook.yml
+    ansible-playbook role_docker_jenkins.yaml
     ```
 
 ## Playbook Details
