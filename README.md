@@ -12,8 +12,8 @@ This Ansible playbook installs Docker and Jenkins on the localhost using the `ia
 1. Clone this repository or create a new file for the playbook:
 
     ```bash
-    git clone <your-repo-url>
-    cd <your-repo-directory>
+    git clone https://github.com/goushaa/DEPI-Ansible.git
+    cd DEPI-Ansible
     ```
 
 2. Install the required Ansible roles:
